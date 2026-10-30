@@ -1,0 +1,14 @@
+name: Event Paths
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "docs/**"
+
+jobs:
+  mon-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message
+        run: echo "Modification dans docs"
