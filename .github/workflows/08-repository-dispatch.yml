@@ -1,0 +1,12 @@
+name: Event External Webhook
+
+on:
+  repository_dispatch:
+    types: [custom_event_type]
+
+jobs:
+  external-trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message
+        run: echo "Evenement externe recu"
