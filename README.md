@@ -11,3 +11,5 @@ Cette modification sert à tester l’événement pull_request.
 Mise à jour de la PR pour tester synchronize.
 
 Test négatif paths : modification du README uniquement.
+
+Test de combinaison des événements sur une PR.
