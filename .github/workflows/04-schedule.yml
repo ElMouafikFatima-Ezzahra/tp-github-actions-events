@@ -1,0 +1,12 @@
+name: Event Scheduled Cron
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  nightly-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message
+        run: echo "Execution automatisee de nuit"
