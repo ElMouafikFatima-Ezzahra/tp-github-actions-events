@@ -1,0 +1,14 @@
+name: Event Workflow Run
+
+on:
+  workflow_run:
+    workflows: ["Premier workflow"]
+    types: [completed]
+
+jobs:
+  on-success:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - name: Afficher un message
+        run: echo "Le premier workflow a reussi"
