@@ -1,0 +1,20 @@
+name: Event Manual Dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Environnement de cible"
+        required: true
+        default: staging
+        type: choice
+        options:
+          - staging
+          - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message
+        run: echo "Deploiement manuel sur ${{ inputs.environment }}"
