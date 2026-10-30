@@ -1,0 +1,12 @@
+name: Event Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message
+        run: echo "Publication des artefacts pour une release"
