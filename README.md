@@ -9,3 +9,5 @@ Modification du README pour tester l'événement push.
 Cette modification sert à tester l’événement pull_request.
 
 Mise à jour de la PR pour tester synchronize.
+
+Test négatif paths : modification du README uniquement.
