@@ -1,0 +1,12 @@
+name: Event Issues
+
+on:
+  issues:
+    types: [opened, labeled]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher un message
+        run: echo "Evenement sur une issue"
